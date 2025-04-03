@@ -1,4 +1,4 @@
 # TPO-MongoPython
 
 cmds:
-run -> python mani.py
+run -> python main.py
