@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "67eeda5864b48745c1d9f919"
+  },
+  "nombre": "Premio Nobel de Literatura",
+  "organizacion": "Academia Sueca"
+},
+{
+  "_id": {
+    "$oid": "67eeda5864b48745c1d9f91a"
+  },
+  "nombre": "Premio Pulitzer",
+  "organizacion": "Columbia University"
+},
+{
+  "_id": {
+    "$oid": "67eeda5864b48745c1d9f91b"
+  },
+  "nombre": "Premio Hugo",
+  "organizacion": "World Science Fiction Society"
+},
+{
+  "_id": {
+    "$oid": "67eeda5864b48745c1d9f91c"
+  },
+  "nombre": "Premio Booker",
+  "organizacion": "Booker Prize Foundation"
+},
+{
+  "_id": {
+    "$oid": "67eeda5864b48745c1d9f91d"
+  },
+  "nombre": "Premio Cervantes",
+  "organizacion": "Ministerio de Cultura de España"
+}]

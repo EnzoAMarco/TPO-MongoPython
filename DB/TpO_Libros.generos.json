@@ -1,0 +1,12 @@
+[{
+  "_id": {
+    "$oid": "67eed86dc69130dbd2036454"
+  },
+  "nombre": "Ciencia Ficción"
+},
+{
+  "_id": {
+    "$oid": "67eef74cff60cf2003a1d48c"
+  },
+  "nombre": "Novela"
+}]
