@@ -499,35 +499,35 @@ with tabs[6]:
 with tabs[7]:
     
     st.subheader("Colección Libros")
-    df_libros = list(db["libros"].find())
+    df_libros = list(db["libros"].find().limit(5))
     st.dataframe(df_libros, use_container_width=True)
     st.divider()
     
     st.subheader("Colección Autores")
-    df_autores = list(db["autores"].find())
+    df_autores = list(db["autores"].find().limit(5))
     st.dataframe(df_autores, use_container_width=True)
     st.divider()
 
     st.subheader("Colección Formatos")
-    df_formatos = list(db["formatos"].find())
+    df_formatos = list(db["formatos"].find().limit(5))
     st.dataframe(df_formatos, use_container_width=True)
     st.divider()
 
     st.subheader("Colección Géneros")
-    df_generos = list(db["generos"].find())
+    df_generos = list(db["generos"].find().limit(5))
     st.dataframe(df_generos, use_container_width=True)
     st.divider()
 
     st.subheader("Colección Idiomas")
-    df_idiomas = list(db["idiomas"].find())
+    df_idiomas = list(db["idiomas"].find().limit(5))
     st.dataframe(df_idiomas, use_container_width=True)
     st.divider()
 
     st.subheader("Colección Nominaciones")
-    df_nominaciones = list(db["nominaciones"].find())
+    df_nominaciones = list(db["nominaciones"].find().limit(5))
     st.dataframe(df_nominaciones, use_container_width=True)
     st.divider()
 
     st.subheader("Colección Premios")
-    df_premios = list(db["premios"].find())
+    df_premios = list(db["premios"].find().limit(5))
     st.dataframe(df_premios, use_container_width=True)
