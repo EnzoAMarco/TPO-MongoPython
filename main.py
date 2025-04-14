@@ -344,7 +344,7 @@ def consulta_7_contar_terror_es(_db):
 
 
 # UI de streamlit
-st.title("📊 Consultas a MongoDB con Pandas & Streamlit (Usando Find)")
+st.title("📊 Consultas a MongoDB con Pandas & Streamlit")
 
 if db is None:
     st.error("No se pudo conectar a la base de datos.")
