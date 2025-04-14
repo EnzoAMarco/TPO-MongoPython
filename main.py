@@ -58,7 +58,9 @@ def get_db():
 
 db = get_db()
 
-# consultas
+# -- consultas --
+# -- consultas --
+# -- consultas --
 
 #Calcula el promedio de año de publicación de libros nominados
 @st.cache_data()
@@ -66,6 +68,7 @@ def consulta_1_promedio_nominados(_db):
     
     print("EJECUTANDO CONSULTA 1 (find + pandas)...")
     if _db is None: return pd.DataFrame()
+    
     try:
         nominaciones_coll = _db["nominaciones"]
         libros_coll = _db["libros"]
@@ -363,7 +366,8 @@ tab_titles = [
     "4: Idioma + Nominado",
     "5: Promedio Año (CF, Español)",
     "6: Conteo Libros Policiales",
-    "7: Conteo Libros (Terror, Español)"
+    "7: Conteo Libros (Terror, Español)",
+    "8: Ver todas las collections"
 ]
 tabs = st.tabs(tab_titles)
 
@@ -492,5 +496,38 @@ with tabs[6]:
         except (KeyError, IndexError, TypeError):
              st.warning("No se pudo extraer el valor del conteo.")
 
-st.divider()
-st.caption(f"Consultas ejecutadas el: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (Resultados cacheados)")
+with tabs[7]:
+    
+    st.subheader("Colección Libros")
+    df_libros = list(db["libros"].find())
+    st.dataframe(df_libros, use_container_width=True)
+    st.divider()
+    
+    st.subheader("Colección Autores")
+    df_autores = list(db["autores"].find())
+    st.dataframe(df_autores, use_container_width=True)
+    st.divider()
+
+    st.subheader("Colección Formatos")
+    df_formatos = list(db["formatos"].find())
+    st.dataframe(df_formatos, use_container_width=True)
+    st.divider()
+
+    st.subheader("Colección Géneros")
+    df_generos = list(db["generos"].find())
+    st.dataframe(df_generos, use_container_width=True)
+    st.divider()
+
+    st.subheader("Colección Idiomas")
+    df_idiomas = list(db["idiomas"].find())
+    st.dataframe(df_idiomas, use_container_width=True)
+    st.divider()
+
+    st.subheader("Colección Nominaciones")
+    df_nominaciones = list(db["nominaciones"].find())
+    st.dataframe(df_nominaciones, use_container_width=True)
+    st.divider()
+
+    st.subheader("Colección Premios")
+    df_premios = list(db["premios"].find())
+    st.dataframe(df_premios, use_container_width=True)
