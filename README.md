@@ -1,4 +1,6 @@
 # TPO-MongoPython
 
 cmds:
-run -> python mani.py
+run -> streamlit run main.py
+pip install pandas
+pip install streamlit
