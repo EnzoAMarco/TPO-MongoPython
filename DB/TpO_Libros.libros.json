@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "67eefacbff60cf2003a1d490"
+  },
+  "titulo": "Rayuela",
+  "autores": [
+    {
+      "$oid": "67eef494ff60cf2003a1d487"
+    }
+  ],
+  "genero": [
+    {
+      "$oid": "67eef74cff60cf2003a1d48c"
+    }
+  ],
+  "formato": [
+    {
+      "$oid": "67eef7c8ff60cf2003a1d48d"
+    }
+  ],
+  "idioma": {
+    "$oid": "67eedbfec69130dbd2036456"
+  },
+  "premios": [
+    {
+      "$oid": "67eeda5864b48745c1d9f91d"
+    }
+  ],
+  "nominaciones": [
+    " falta poner id nominaciones "
+  ],
+  "anio_publicacion": 1963
+}]

@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "67eeff98ff60cf2003a1d491"
+  },
+  "libro": {
+    "$oid": "67eefacbff60cf2003a1d490"
+  },
+  "premio": {
+    "$oid": "67eeda5864b48745c1d9f91d"
+  },
+  "anio_nominacion": {
+    "$date": "1982-01-01T00:00:00.000Z"
+  },
+  "ganador": true
+}]

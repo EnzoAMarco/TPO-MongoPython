@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "67eef494ff60cf2003a1d487"
+  },
+  "nombre": "Julio Cortázar",
+  "nacionalidad": "Argentino",
+  "fecha_nacimiento": {
+    "$date": {
+      "$numberLong": "-1746748800000"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "67eef494ff60cf2003a1d488"
+  },
+  "nombre": "Isabel Allende",
+  "nacionalidad": "Chilena",
+  "fecha_nacimiento": {
+    "$date": {
+      "$numberLong": "-865209600000"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "67eef494ff60cf2003a1d489"
+  },
+  "nombre": "Haruki Murakami",
+  "nacionalidad": "Japonés",
+  "fecha_nacimiento": {
+    "$date": {
+      "$numberLong": "-661737600000"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "67eef494ff60cf2003a1d48a"
+  },
+  "nombre": "Jane Austen",
+  "nacionalidad": "Británica",
+  "fecha_nacimiento": {
+    "$date": {
+      "$numberLong": "-6123427200000"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "67eef494ff60cf2003a1d48b"
+  },
+  "nombre": "Fiódor Dostoyevski",
+  "nacionalidad": "Ruso",
+  "fecha_nacimiento": {
+    "$date": {
+      "$numberLong": "-4674844800000"
+    }
+  }
+}]
